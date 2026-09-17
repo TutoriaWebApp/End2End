@@ -18,6 +18,6 @@ Estou ciente Privacidade e Cookies
 
 Dado que eu estou logado
     # Dado que eu acesso o Webtutoria
-	Preencher campo    ${EMAIL}    ${EMAIL_VALIDO}
-	Preencher campo    ${SENHA}    ${SENHA_GERAL}
-	Clicar em    ${ENTRAR}
+	Preencher campo    ${INP_EMAIL}    ${EMAIL_VALIDO}
+	Preencher campo    ${INP_SENHA}    ${SENHA_GERAL}
+	Clicar em    ${BTN_ENTRAR}
