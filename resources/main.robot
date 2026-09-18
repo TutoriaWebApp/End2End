@@ -15,3 +15,4 @@ Resource    pages/perfil/redefinir_senha.robot
 Resource    pages/perfil/perfil_publico.robot
 
 Resource    pages/buscar_tutores/buscar.robot
+Resource    pages/recomendacoes/recomendacoes.robot

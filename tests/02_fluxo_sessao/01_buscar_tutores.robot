@@ -9,6 +9,7 @@ Cenário: Buscar todos os tutores e verificar resultado
     Dado que eu naveguei o site até a página de Buscar Tutores
     Quando clico em Buscar
     Então devo ver a lista de resultados
+
 Cenário: Filtrar tutores por Área de Conhecimento
     Dado que eu naveguei o site até a página de Buscar Tutores
     Quando seleciono um filtro de Área de Conhecimento
