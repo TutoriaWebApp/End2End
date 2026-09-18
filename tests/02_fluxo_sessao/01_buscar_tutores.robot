@@ -28,9 +28,9 @@ Cenário: Filtrar tutores por raio de distância 1km
  	E clico em Buscar
     Então devo ver a mensagem de tutor não encontrado
 
-Cenário: Filtrar tutores por raio de distância 1km
+Cenário: Filtrar tutores por raio de distância 1000km
     Dado que eu naveguei o site até a página de Buscar Tutores
-    Quando seleciono um filtro de raio de distância    1
+    Quando seleciono um filtro de raio de distância    1000
  	E clico em Buscar
     Então devo ver a lista de resultados
 
