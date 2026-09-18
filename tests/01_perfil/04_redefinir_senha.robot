@@ -20,4 +20,4 @@ Cenário: Redefinir senha por link já utilizado
     Dado que eu acesse a url enviada no e-mail
     Quando preencho os campos senha e confirmação de senha
     E clico em "Redefinir Senha"
-    Então devo visualizar a mensagem de sucesso de redefinição de senha
+    Então devo visualizar a mensagem de falha de redefinição de senha
