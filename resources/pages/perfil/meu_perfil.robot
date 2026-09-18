@@ -8,7 +8,7 @@ Dado que estou na página de Perfil
     Quando eu clico em Perfil na Navbar
 
 Quando eu clico em Perfil na Navbar
-    Clicar em    ${NAV_BAR}
+    Clicar em    ${NAV_BAR_MEUPERFIL}
 
 Quando eu clico em Editar Perfil
     Clicar em    ${EDITAR_PERFIL}
@@ -66,7 +66,7 @@ Então eu vejo a mensagem de senha alterada com sucesso
     Verificar mensagem de notificação    ${ALTERAR_SENHA_MENSAGEM_SUCESSO}
 
 *** Variables ***
-${NAV_BAR}                            //a[@href="/meu-perfil"]
+${NAV_BAR_MEUPERFIL}                  //a[@href="/meu-perfil"]
 ${EDITAR_PERFIL}                      id:btn-profileEdit
 ${BTN_SALVAR_EDIT}                    id:btn-saveProfile
 ${BTN_ALTERAR_SENHA}                  id:btn-openChangePasswordModal

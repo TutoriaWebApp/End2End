@@ -29,7 +29,7 @@ Então devo ver a mensagem de tutor não encontrado
 
 Quando seleciono um filtro de raio de distância
     [Arguments]    ${raio}
-    Selecionar item    ${INP_RAIO}    ${raio}
+    Preencher campo   ${INP_RAIO}    ${raio}
 
 Quando seleciono o método de ordenação Decrescente para Nota Avaliação
     Selecionar item    ${SEL_ORDENAR_NOTA}    Decrescente

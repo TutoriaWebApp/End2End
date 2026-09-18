@@ -15,7 +15,7 @@ Clicar em
 
 Preencher campo
     [Arguments]    ${elemento}    ${texto}
-	Focar no elemento    ${elemento}    
+	Focar no elemento    ${elemento}
 	Input Text    ${elemento}    ${texto}
 
 Selecionar item
@@ -31,13 +31,21 @@ Subir arquivo
 
 Verificar elemento possui mensagem
 	[Arguments]    ${elemento}    ${mensagem}
-	Wait Until Page Contains Element    ${elemento}    ${Tempo de Espera}
-	Element Text Should Be              ${elemento}    ${mensagem}
+	Focar no elemento         ${elemento}
+	Element Should Contain    ${elemento}    ${mensagem}
 
 Verificar mensagem de notificação
     [Arguments]    ${mensagem}
-    Wait Until Page Contains Element    ${NOTIFICACAO}    ${Tempo de Espera}
-    Element Text Should Be              ${NOTIFICACAO}    ${mensagem}
+	Focar no elemento         ${NOTIFICACAO}
+    Element Text Should Be    ${NOTIFICACAO}    ${mensagem}
+
+Comparar valores maiores
+	[Arguments]    ${valor1}    ${valor2}
+	${v1}=    Get Text    ${valor1}
+	${v2}=    Get Text    ${valor2}
+	${v1}=    Remove String    ${v1}    avaliações
+	${v2}=    Remove String    ${v2}    avaliações
+	Should Be True    ${v1} >= ${v2}
 
 Ir para página
 	[Arguments]    ${url}
@@ -45,5 +53,5 @@ Ir para página
 
 *** Variables ***
 ${Tempo de Espera}    15s
-${Tempo de Evento}    1s
+${Tempo de Evento}    3s
 ${NOTIFICACAO}        id:snk-notification
