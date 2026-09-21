@@ -50,6 +50,7 @@ Comparar valores maiores
 Ir para página
 	[Arguments]    ${url}
 	Go To    ${url}
+	Sleep    ${Tempo de Evento}
 
 *** Variables ***
 ${Tempo de Espera}    15s
