@@ -3,9 +3,15 @@ Resource    ../main.robot
 
 *** Keywords ***
 Focar no elemento
-	[Arguments]    ${elemento}
+	[Arguments]                         ${elemento}
 	Wait Until Page Contains Element    ${elemento}    ${Tempo de Espera}
-	Set Focus To Element    ${elemento}
+	Set Focus To Element                ${elemento}
+
+Rolar até
+    [Arguments]    ${elemento}
+    ${elem}=    Get WebElement    ${elemento}
+    Execute Javascript            arguments[0].scrollIntoView({block: "center", inline: "center"});    ARGUMENTS    ${elem}
+    Sleep                         ${Tempo de Evento}
 
 Clicar em
     [Arguments]    ${elemento}

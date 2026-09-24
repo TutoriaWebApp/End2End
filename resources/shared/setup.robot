@@ -17,7 +17,7 @@ Estou ciente Privacidade e Cookies
 	Clicar em    //button[contains(text(), 'Estou Ciente')]
 
 Dado que eu estou logado
-    # Dado que eu acesso o Webtutoria
-	Preencher campo    ${INP_EMAIL}    ${EMAIL_VALIDO}
-	Preencher campo    ${INP_SENHA}    ${SENHA_GERAL}
+    [Arguments]        ${email}=${EMAIL_VALIDO}    ${senha}=${SENHA_GERAL}
+	Preencher campo    ${INP_EMAIL}    ${email}
+	Preencher campo    ${INP_SENHA}    ${senha}
 	Clicar em    ${BTN_ENTRAR}
