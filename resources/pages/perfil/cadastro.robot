@@ -17,6 +17,7 @@ Quando preencho os campos de cadastro com dados válidos
 	Preencher campo    ${INP_SENHA}          ${SENHA_GERAL}
 	Preencher campo    ${INP_SENHA_CNFRM}    ${SENHA_GERAL}
 	Selecionar item    ${SEL_ESTADO}         Distrito Federal
+	Sleep              ${Tempo de Evento}
 	Selecionar item    ${SEL_CIDADE}         Brasília
 	Preencher campo    ${INP_ANIVERSARIO}    ${nascimento_fake}
 	Preencher campo    ${TXT_SOBREMIM}       ${sobremim_fake}
